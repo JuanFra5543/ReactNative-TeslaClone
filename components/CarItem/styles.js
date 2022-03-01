@@ -1,10 +1,10 @@
 // import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
     carContainer: {
         width: '100%',
-        height: '100%',
+        height: Dimensions.get('window').height,
     },
     buttonsContainer:{
         position: 'absolute',
@@ -20,15 +20,18 @@ const styles = StyleSheet.create({
         fontSize: 40,
         fontWeight: '600'
     },
-        subtitle: {
+    subtitle: {
         fontSize: 16,
         color: '#5c5e62'
     },
-        image:{
+    image:{
         width: '100%',
         height: '100%',
         resizeMode: 'cover',
         position: 'absolute'
+    },
+    subtitleCTA:{
+        textDecorationLine: 'underline',
     },
 });
 
